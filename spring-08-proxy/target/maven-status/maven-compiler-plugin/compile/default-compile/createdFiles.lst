@@ -1,0 +1,14 @@
+com\wang\demo01\Host.class
+com\wang\demo01\Proxy.class
+com\wang\demo03\ProxyInvocationHandler.class
+com\wang\demo02\UserService.class
+com\wang\demo03\Rent.class
+com\wang\demo01\Rent.class
+com\wang\demo02\UserServiceProxy.class
+com\wang\demo02\UserServiceImpl.class
+com\wang\demo01\Client.class
+com\wang\demo02\Client.class
+com\wang\demo03\Client.class
+com\wang\demo03\Host.class
+com\wang\demo04\Client.class
+com\wang\demo04\ProxyInvocationHandler.class

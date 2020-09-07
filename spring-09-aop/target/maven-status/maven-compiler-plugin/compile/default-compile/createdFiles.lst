@@ -1,0 +1,6 @@
+com\wang\log\AfterLog.class
+com\wang\diy\AnnotationPointCut.class
+com\wang\diy\DiyPointCut.class
+com\wang\service\UserServiceImpl.class
+com\wang\log\Log.class
+com\wang\service\UserService.class

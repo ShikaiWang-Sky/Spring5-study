@@ -1,0 +1,4 @@
+com\wang\mapper\UserMapper.class
+com\wang\mapper\UserMapperImpl.class
+com\wang\mapper\UserMapperImpl2.class
+com\wang\pojo\User.class

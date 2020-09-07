@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.wang.pojo.Address">
+        <property name="address" value="南京"/>
+    </bean>
+
+    <bean id="student" class="com.wang.pojo.Student">
+        <!--第一种, 普通值注入(基本类型), value-->
+        <property name="name" value="wang sky"/>
+
+        <!--第二种, Bean注入(自定义类型), ref, 传入的值在xml中对应的id的bean中指定,不指定则为null-->
+        <property name="address" ref="address"/>
+
+        <!--数组注入-->
+        <property name="book">
+            <array>
+                <value>红楼梦</value>
+                <value>西游记</value>
+                <value>水浒传</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+
+        <!--list注入-->
+        <property name="hobbies">
+            <list>
+                <value>听音乐</value>
+                <value>看电影</value>
+                <value>打电动</value>
+            </list>
+        </property>
+
+        <!--Map注入-->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="11111122222222333333"/>
+                <entry key="银行卡" value="123456871313545343513"/>
+            </map>
+        </property>
+
+        <!--Set注入-->
+        <property name="games">
+            <set>
+                <value>WOW</value>
+                <value>M&amp;B2</value>
+                <value>FF14</value>
+            </set>
+        </property>
+
+        <!--空值注入-->
+<!--        <property name="wife" value=""/>-->
+
+        <!--Null注入-->
+        <property name="wife">
+            <null/>
+        </property>
+
+        <!--properties注入(K-V对)-->
+        <property name="info">
+            <props>
+                <prop key="学号">20201123</prop>
+                <prop key="性别">男性</prop>
+                <prop key="别名">小明</prop>
+            </props>
+        </property>
+
+
+    </bean>
+
+</beans>
